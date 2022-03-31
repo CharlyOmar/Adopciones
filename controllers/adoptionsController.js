@@ -205,8 +205,7 @@ controller.putAdoption = (req, res) =>
     })
 }
 
-controller.deleteAdoption = (req, res) =>
-{
+controller.deleteAdoption = (req, res) => {
     const sql = "DELETE from adoptions WHERE id = ?";
     req.getConnection((error,conn) => {
         if(error)
